@@ -27,6 +27,12 @@
     pkgs.youtube-dl
     pkgs.encfs
     pkgs.niv
+    pkgs.git
+    pkgs.git-lfs
+    pkgs.yarn
+    pkgs.hugo
+    pkgs.nodejs-14_x
+    pkgs.silver-searcher
   ];
 
   programs.git = {
@@ -65,6 +71,6 @@
           sha256 = "1gfyrgn23zpwv1vj37gf28hf5z0ka0w5qm6286a7qixwv7ijnrx9";
         };
       }
-    ];
-  };
+    ]; 
+  }; 
 }
