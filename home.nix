@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 
-{
+rec {
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -19,6 +19,8 @@
   # changes in each release.
   home.stateVersion = "21.05";
 
+  nixpkgs.overlays = [ (import ./apps-overlay.nix) ];
+
   # Additional packages
   home.packages = [
     pkgs.jq
@@ -33,6 +35,8 @@
     pkgs.hugo
     pkgs.nodejs-14_x
     pkgs.silver-searcher
+    pkgs.Anki
+    pkgs.Obsidian
   ];
 
   programs.git = {
