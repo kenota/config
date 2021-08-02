@@ -38,6 +38,13 @@ rec {
     pkgs.Anki
     pkgs.Obsidian
     pkgs.go_1_15
+    pkgs.gopkgs
+    pkgs.go-outline
+    pkgs.gotests
+    pkgs.gomodifytags
+    pkgs.impl
+    pkgs.delve
+    pkgs.gopls
   ];
 
   programs.git = {
