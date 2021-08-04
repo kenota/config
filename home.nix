@@ -38,6 +38,8 @@ rec {
     pkgs.Anki
     pkgs.Obsidian
     pkgs.Gnucash
+
+    # Go
     pkgs.go_1_15
     pkgs.gopkgs
     pkgs.go-outline
@@ -46,6 +48,8 @@ rec {
     pkgs.impl
     pkgs.delve
     pkgs.gopls
+    pkgs.golangci-lint
+
   ];
 
   programs.git = {
