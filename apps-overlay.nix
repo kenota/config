@@ -49,4 +49,18 @@ Obsidian = self.installApplication rec {
   homepage = https://obsidian.md/;
 };
 
+Gnucash = self.installApplication rec {
+  name = "Gnucash";
+  version = "4.6-1";
+  sourceRoot = "Gnucash.app";
+
+  src = super.fetchurl {
+    url = "https://github.com/kenota/storage/raw/main/Gnucash-Intel-4.6-1.dmg";
+    sha256 = "1cl4y3cyqkvbqrgv6za93hpzpp1b4if1ff14ng7ydi66ln8icr0x";
+  };
+
+  description = "GnuCash is a double-entry financial application";
+  homepage = https://www.gnucash.org/;
+};
+
 }

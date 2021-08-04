@@ -37,6 +37,7 @@ rec {
     pkgs.silver-searcher
     pkgs.Anki
     pkgs.Obsidian
+    pkgs.Gnucash
   ];
 
   programs.git = {
