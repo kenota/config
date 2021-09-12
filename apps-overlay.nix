@@ -19,12 +19,12 @@ installApplication =
 
 Anki = self.installApplication rec {
   name = "Anki";
-  version = "2.1.44";
+  version = "2.1.47";
   sourceRoot = "Anki.app";
 
   src = super.fetchurl {
     url = "https://github.com/ankitects/anki/releases/download/${version}/anki-${version}-mac.dmg";
-    sha256 = "1zrdih4rjsq30480sf200pw59r42p3nq2md56kj2l641kbc7ljka";
+    sha256 = "0s41ayiaabbk1liky250nj9ac7158h5wmb63i5wv4s8jv0ijn1jg";
   };
   description = "Anki is a program which makes remembering things easy";
   homepage = https://apps.ankiweb.net; 
