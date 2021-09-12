@@ -14,13 +14,7 @@ installApplication =
     installPhase = ''
       mkdir -p "$out/Applications/${appname}.app"
       cp -pR * "$out/Applications/${appname}.app"
-    '' + postInstall;
-    /*meta = with stdenv.lib; {
-      description = description;
-      homepage = homepage;
-      maintainers = with maintainers; [ kenota ];
-      platforms = platforms.darwin;
-    };*/
+    '' + postInstall;    
   };
 
 Anki = self.installApplication rec {
