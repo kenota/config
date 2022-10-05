@@ -63,7 +63,7 @@ rec {
     pkgs.jq
     pkgs.fzf
     pkgs.wget
-    pkgs.youtube-dl
+#    pkgs.youtube-dl
     pkgs.encfs
     pkgs.niv
     pkgs.git
@@ -75,6 +75,8 @@ rec {
     pkgs.Anki
     pkgs.Obsidian
     pkgs.Gnucash
+    pkgs.nginx
+    pkgs.cargo
 
     # Go
     pkgs.go_1_15
