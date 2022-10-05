@@ -32,12 +32,12 @@ Anki = self.installApplication rec {
 
 Obsidian = self.installApplication rec {
   name = "Obsidian";
-  version = "0.12.10";
+  version = "0.15.9";
   sourceRoot = "Obsidian.app";
 
   src = super.fetchurl {
     url = "https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/Obsidian-${version}-universal.dmg";
-    sha256 = "0yl4zkk9w3r35cgmlsxg1528f678yvwprgfac4hw3x9piyyg8064";
+    sha256 = "1q9almr8k1i2wzksd09libgnvypj5k9j15y6cxg4rgnw32fa152n";
   };
   description = "Obisidan is an application to write notes in Markdown";
   homepage = https://obsidian.md/;
